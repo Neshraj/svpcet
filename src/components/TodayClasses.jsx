@@ -29,7 +29,9 @@ const getPeriodStatus = (start, end) => {
 function TodayClasses() {
   const today = getToday();
 
-  if (!TimeTable.timetable[today]) {
+  const todayData = TimeTable.timetable[today];
+
+  if (!todayData) {
     return <p className="p-4 text-lg">No classes today 🎉</p>;
   }
 
@@ -46,19 +48,27 @@ function TodayClasses() {
         <tbody>
           {TimeTable.periods.map((period, index) => {
             const [start, end] = period.split(" to ");
-            const status = getPeriodStatus(start, end);
+            const item = todayData[index];
+            const subject = item.subject;
+            const isCancelled = item.cancelled === true;
 
             let bgColor = "";
-            if (status === "Completed") bgColor = "bg-green-100";
-            else if (status === "Ongoing") bgColor = "bg-yellow-100";
-            else if (status === "Not Started") bgColor = "bg-red-100";
+            let status = "";
+
+            if (isCancelled) {
+              bgColor = "bg-red-400 text-white";
+              status = "Cancelled";
+            } else {
+              status = getPeriodStatus(start, end);
+              if (status === "Completed") bgColor = "bg-green-100";
+              else if (status === "Ongoing") bgColor = "bg-yellow-100";
+              else if (status === "Not Started") bgColor = "bg-red-100";
+            }
 
             return (
               <tr key={index} className={`${bgColor}`} title={status}>
                 <td className="border px-4 py-2">{period}</td>
-                <td className="border px-4 py-2">
-                  {TimeTable.timetable[today][index]}
-                </td>
+                <td className="border px-4 py-2">{subject}</td>
               </tr>
             );
           })}
