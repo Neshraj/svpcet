@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function Bar() {
 
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState(null);
     const [isOpen, setIsOpen] = useState(false);
     
       const items = [
