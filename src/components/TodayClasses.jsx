@@ -38,6 +38,12 @@ function TodayClasses() {
   return (
     <div className="p-4">
       <h2 className="text-xl font-bold mb-4">Today's Classes – {today}</h2>
+      <div className="flex flex-row flex-wrap mb-3 justify-evenly items-center gap-1">
+        <div><span className="w-5 h-5 whitespace-nowrap rounded-md p-1 bg-red-100">Not Started</span></div>
+        <div><span className="w-5 h-5 whitespace-nowrap rounded-md p-1 bg-yellow-100">Ongoing</span></div>
+        <div><span className="w-5 h-5 whitespace-nowrap rounded-md p-1 bg-green-200">Compleated</span></div>
+        <div><span className="w-5 h-5 whitespace-nowrap rounded-md p-1 bg-red-400">Cancelled</span></div>
+      </div>
       <table className="w-full border border-gray-300 text-center">
         <thead>
           <tr className="bg-gray-100">
@@ -56,11 +62,11 @@ function TodayClasses() {
             let status = "";
 
             if (isCancelled) {
-              bgColor = "bg-red-400 text-white";
+              bgColor = "bg-red-400";
               status = "Cancelled";
             } else {
               status = getPeriodStatus(start, end);
-              if (status === "Completed") bgColor = "bg-green-100";
+              if (status === "Completed") bgColor = "bg-green-200";
               else if (status === "Ongoing") bgColor = "bg-yellow-100";
               else if (status === "Not Started") bgColor = "bg-red-100";
             }

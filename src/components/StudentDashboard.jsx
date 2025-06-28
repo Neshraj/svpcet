@@ -31,7 +31,7 @@ function Bar() {
         {/* Head */}
         <div className="container mx-auto p-3 flex flex-row justify-between items-center shadow-sm">
           <img
-        className={`w-6 h-6 transition-transform duration-300 cursor-pointer ${isOpen ? 'rotate-360' : ''}`}
+        className={`w-6 h-6 transition-transform duration-300 cursor-pointer ${!isOpen ? 'rotate-360' : ''}`}
         src="/assets/logos/menu.svg"
         alt="Menu"
         onClick={() => setIsOpen(!isOpen)}

@@ -38,9 +38,9 @@ export const TimeTable = {
     ],
     Saturday: [
       { subject: "SOA", cancelled: false },
-      { subject: "HRM", cancelled: true },
+      { subject: "HRM", cancelled: false },
       { subject: "DDB", cancelled: false },
-      { subject: "MEMS", cancelled: true }
+      { subject: "MEMS", cancelled: false }
     ]
   }
 };
