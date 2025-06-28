@@ -77,7 +77,7 @@ function TodayClasses() {
       {/* Timetable Table */}
       <table className="w-full text-center mb-2 border-separate border-spacing-y-2 border-spacing-x-1">
   <thead>
-    <tr className="bg-gray-100 shadow-sm">
+    <tr className="bg-gray-200 shadow-sm">
       <th className="px-4 py-2 rounded-md">Time</th>
       <th className="px-4 py-2 rounded-md">Subject</th>
     </tr>
