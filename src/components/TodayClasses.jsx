@@ -38,12 +38,29 @@ function TodayClasses() {
   return (
     <div className="p-4">
       <h2 className="text-xl font-bold mb-4">Today's Classes – {today}</h2>
-      <div className="flex flex-row flex-wrap mb-3 justify-evenly items-center gap-1">
-        <div><span className="w-5 h-5 whitespace-nowrap rounded-md p-1 bg-red-100">Not Started</span></div>
-        <div><span className="w-5 h-5 whitespace-nowrap rounded-md p-1 bg-yellow-100">Ongoing</span></div>
-        <div><span className="w-5 h-5 whitespace-nowrap rounded-md p-1 bg-green-200">Compleated</span></div>
-        <div><span className="w-5 h-5 whitespace-nowrap rounded-md p-1 bg-red-400">Cancelled</span></div>
-      </div>
+      <div className="flex flex-wrap items-center gap-3 mb-3">
+  <div>
+    <span className="min-w-[100px] inline-block whitespace-nowrap rounded-md px-3 py-1 bg-red-100 text-sm text-center">
+      Not Started
+    </span>
+  </div>
+  <div>
+    <span className="min-w-[100px] inline-block whitespace-nowrap rounded-md px-3 py-1 bg-yellow-100 text-sm text-center">
+      Ongoing
+    </span>
+  </div>
+  <div>
+    <span className="min-w-[100px] inline-block whitespace-nowrap rounded-md px-3 py-1 bg-green-200 text-sm text-center">
+      Completed
+    </span>
+  </div>
+  <div>
+    <span className="min-w-[100px] inline-block whitespace-nowrap rounded-md px-3 py-1 bg-red-400 text-white text-sm text-center">
+      Cancelled
+    </span>
+  </div>
+</div>
+
       <table className="w-full border border-gray-300 text-center">
         <thead>
           <tr className="bg-gray-100">
