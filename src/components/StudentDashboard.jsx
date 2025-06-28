@@ -47,7 +47,7 @@ function Bar() {
                 key={index}
                 onClick={() => setActiveIndex(index)}
               >
-                <img className="w-6 h-6" src={item.icon} alt={item.label} />
+                <img className="w-5 h-5" src={item.icon} alt={item.label} />
                 <p className="text-sm font-thin whitespace-nowrap pl-1">{item.label}</p>
               </li>
             ))}
