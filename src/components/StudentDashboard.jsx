@@ -1,4 +1,6 @@
 import { useState } from "react";
+import TodayClasses from "./TodayClasses";
+
 
 function Bar() {
 
@@ -14,13 +16,22 @@ function Bar() {
         { icon: "/assets/logos/logout.svg", label: "Logout" },
       ];
 
+      
+
+
+
+
+
+
+
+
   return (
     <>
       <div className="font-mono">
         {/* Head */}
         <div className="container mx-auto p-3 flex flex-row justify-between items-center shadow-sm">
           <img
-        className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-360' : ''}`}
+        className={`w-6 h-6 transition-transform duration-300 cursor-pointer ${isOpen ? 'rotate-360' : ''}`}
         src="/assets/logos/menu.svg"
         alt="Menu"
         onClick={() => setIsOpen(!isOpen)}
@@ -41,7 +52,7 @@ function Bar() {
               <li
               className={`flex flex-row justify-star items-center rounded-md pr-7 py-2 mb-5 mr-3 overflow-hidden transition-all duration-100 ease-in-out hover:underline hover:bg-gray-100 hover:cursor-pointer ${
                   activeIndex === index
-                    ? "bg-gray-300"
+                    ? "bg-gray-200"
                     : ""
                 }`}
                 key={index}
@@ -54,16 +65,9 @@ function Bar() {
           </ul>
           </div>
 
-          <div className="">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              fuga cupiditate, unde blanditiis aliquid explicabo, et excepturi
-              magni accusantium dignissimos voluptatum necessitatibus modi minus
-              molestias provident voluptatibus, consectetur odit. Aliquam
-              reiciendis non voluptate in doloribus, enim, dicta, laborum
-              facilis explicabo quaerat maxime consequatur tenetur vero harum
-              placeat eaque. Minus, aspernatur.
-            </p>
+            {/* Dashboard Body */}
+          <div className="container mx-auto">
+            <TodayClasses />
           </div>
         </div>
       </div>
