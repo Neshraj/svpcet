@@ -36,12 +36,12 @@ function StudentDashboard() {
           {/* Side Bar */}
           <div>
             <ul
-              className={`list-none overflow-hidden pl-2 transition-all duration-400 ease-in-out 
+              className={`list-none overflow-hidden transition-all duration-400 ease-in-out 
     ${isOpen ? "w-0 opacity-0" : "w-33 opacity-100"} md:pl-0`}
             >
               {items.map((item, index) => (
                 <li
-                  className={`flex flex-row justify-star items-center rounded-md pr-7 py-2 mb-5 mr-3 overflow-hidden transition-all duration-100 ease-in-out hover:underline hover:bg-gray-100 hover:cursor-pointer ${
+                  className={`flex flex-row justify-star items-center rounded-md ml-2 py-2 mb-5 mr-3 overflow-hidden transition-all duration-100 ease-in-out hover:underline hover:bg-gray-100 hover:cursor-pointer ${
                     activeIndex === index ? "bg-gray-200" : ""
                   }`}
                   key={index}
