@@ -47,7 +47,7 @@ function TodayClasses() {
   let attendedClasses = 0; // default 0
 
   return (
-    <div className="font-mono">
+    <div className="font-mono p-3">
       <h2 className="text-xl font-bold mb-4">Today's Classes – {today}</h2>
 
       {/* Color Legend */}
