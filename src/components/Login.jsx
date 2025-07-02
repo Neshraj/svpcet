@@ -8,7 +8,7 @@ function Login() {
     <>
       <div className="font-mono box-border">
         {/* <!-- Head Tag --> */}
-        <div className="container mx-auto shadow-sm flex flex-row justify-center py-2 mt-3">
+        <div className="container mx-auto shadow-sm flex flex-row justify-center py-2">
           <img className="" src="/assets/tag.png" alt="Tag" />
         </div>
 
