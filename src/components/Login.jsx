@@ -9,7 +9,7 @@ function Login() {
       <div className="font-mono box-border">
         {/* <!-- Head Tag --> */}
         <div className="container mx-auto shadow-sm flex flex-row justify-center py-2">
-          <img className="" src="/assets/tag.png" alt="Tag" />
+          <img className="" src="/assets/tag.png" alt="svpcet lable" />
         </div>
 
         {/* <!-- Tittle --> */}
@@ -26,7 +26,7 @@ function Login() {
             <img
               className="mx-auto md:h-100"
               src="/assets/animations/an2.gif"
-              alt="Logo"
+              alt="svpcet background logo"
             />
           </div>
 

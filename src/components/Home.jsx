@@ -2,18 +2,46 @@ import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 <Helmet>
-  <title>SVPCET College Management System</title>
+  <title>SVPCET Student & Faculty Portal | College Management System</title>
+  
   <meta
     name="description"
-    content="Manage academics, attendance, and student-teacher communication with SVPCET SRI VENKATESA PERUMAL COLLEGE OF ENGINEERING AND TECHNOLOGY CMS."
+    content="SVPCET's online portal helps students, faculty, and management manage attendance, marks, timetables, and academic tasks easily. Built for SVPCET, Puttur, Andhra Pradesh."
   />
+  
   <meta
     name="keywords"
-    content="college management system, student portal, SVPCET, attendance, dashboard, education"
+    content="SVPCET, SVPCET portal, SVPCET Puttur, college management system, student portal, faculty dashboard, attendance tracking, timetable, engineering college ERP, Andhra Pradesh, SVPCET website"
   />
+
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://svpcet.onrender.com" />
-</Helmet>;
+  <meta name="google-site-verification" content="iWi7L29i1Uh-ufBFI3vafScreh3SXOi5QUOBWI-NXc4" />
+
+  {/* Open Graph Meta (Social Sharing) */}
+  <meta property="og:title" content="SVPCET College Management System" />
+  <meta
+    property="og:description"
+    content="Login to the SVPCET portal for attendance, marks, timetables, and more. Designed for students and faculty of SVPCET Puttur, Andhra Pradesh."
+  />
+  <meta property="og:url" content="https://svpcet.onrender.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://svpcet.onrender.com/assets/tag.png" />
+
+  {/* Structured Data (JSON-LD) */}
+  <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "SVPCET College Management System",
+        "url": "https://svpcet.onrender.com",
+        "description": "SVPCET's ERP system for students, faculty, and admin to manage attendance, schedules, grades, and communication in Puttur, Andhra Pradesh."
+      }
+    `}
+  </script>
+</Helmet>
+
 
 function Home() {
   const navigate = useNavigate();
@@ -22,7 +50,7 @@ function Home() {
     <div className="container mx-auto font-mono box-border shadow-sm bg-gray-50 text-gray-800 min-h-screen">
       {/* Header Logo */}
       <div className="container mx-auto shadow-sm flex flex-row justify-center py-2">
-        <img className="" src="/assets/tag.png" alt="Tag" />
+        <img className="" src="/assets/tag.png" alt="svpcet lable" />
       </div>
 
       {/* Hero Section */}
