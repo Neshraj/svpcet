@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
   <meta name="keywords" content="college management system, student portal, SVPCET, attendance, dashboard, education" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://svpcet.onrender.com" />
+  <meta name="google-site-verification" content="iWi7L29i1Uh-ufBFI3vafScreh3SXOi5QUOBWI-NXc4" />
 </Helmet>
 
 
