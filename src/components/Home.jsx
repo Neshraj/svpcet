@@ -2,10 +2,6 @@ import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 <Helmet>
-  <meta
-    name="google-site-verification"
-    content="iWi7L29i1Uh-ufBFI3vafScreh3SXOi5QUOBWI-NXc4"
-  />
   <title>SVPCET College Management System</title>
   <meta
     name="description"
