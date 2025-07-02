@@ -40,7 +40,7 @@ function Home() {
               className="bg-white text-blue-600 cursor-pointer font-semibold px-6 py-3 rounded-lg hover:bg-blue-100 transition"
               onClick={() => navigate("/login")}
             >
-              Proceed to Login
+              Proceed To Login
             </button>
           </div>
         </div>
