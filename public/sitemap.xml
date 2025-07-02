@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
   <url>
     <loc>https://svpcet.onrender.com</loc>
     <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
   </url>
+
+  <!-- Login Page -->
   <url>
     <loc>https://svpcet.onrender.com/login</loc>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
-  <!-- Add other routes if needed -->
+
+  <!-- Add more public pages here as needed -->
 </urlset>
