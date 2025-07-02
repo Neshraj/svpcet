@@ -1,4 +1,14 @@
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from "react-helmet";
+
+<Helmet>
+  <title>SVPCET College Management System</title>
+  <meta name="description" content="Manage academics, attendance, and student-teacher communication with SVPCET SRI VENKATESA PERUMAL COLLEGE OF ENGINEERING AND TECHNOLOGY CMS." />
+  <meta name="keywords" content="college management system, student portal, SVPCET, attendance, dashboard, education" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://svpcet.onrender.com" />
+</Helmet>
+
 
 function Home() {
     const navigate = useNavigate();
