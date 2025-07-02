@@ -6,9 +6,9 @@ function Home() {
   return (
     <div className="container mx-auto font-mono box-border shadow-sm bg-gray-50 text-gray-800 min-h-screen">
       {/* Header Logo */}
-      <div className="py-4 flex justify-center shadow-sm bg-white">
-        <img src="/assets/tag.png" alt="SVPCET Logo" className="h-16" />
-      </div>
+      <div className="container mx-auto shadow-sm flex flex-row justify-center py-2">
+          <img className="" src="/assets/tag.png" alt="Tag" />
+        </div>
 
       {/* Hero Section */}
       <section className="bg-blue-400 text-white py-16 px-4">
