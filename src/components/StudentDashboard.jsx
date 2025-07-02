@@ -6,12 +6,12 @@ function StudentDashboard() {
   const [isOpen, setIsOpen] = useState(false);
 
   const items = [
-    { icon: "/assets/logos/dashboard.svg", label: "svpcet Dashboard" },
-    { icon: "/assets/logos/accademics.svg", label: "svpcet Accademics" },
-    { icon: "/assets/logos/timetable.svg", label: "svpcet Time Table" },
-    { icon: "/assets/logos/attandense.svg", label: "svpcet Attandance" },
-    { icon: "/assets/logos/profile2.svg", label: "svpcet Profile" },
-    { icon: "/assets/logos/logout.svg", label: "svpcet Logout" },
+    { icon: "/assets/logos/dashboard.svg", label: "Dashboard" },
+    { icon: "/assets/logos/accademics.svg", label: "Accademics" },
+    { icon: "/assets/logos/timetable.svg", label: "Time Table" },
+    { icon: "/assets/logos/attandense.svg", label: "Attandance" },
+    { icon: "/assets/logos/profile2.svg", label: "Profile" },
+    { icon: "/assets/logos/logout.svg", label: "Logout" },
   ];
 
   return (
