@@ -6,7 +6,7 @@ function Login() {
 
   return (
     <>
-      <div className="font-mono box-border dark:bg-gray-900 dark:text-white">
+      <div className="font-mono box-border">
         {/* <!-- Head Tag --> */}
         <div className="container mx-auto shadow-sm flex flex-row justify-center py-2 mt-3">
           <img className="" src="/assets/tag.png" alt="Tag" />
@@ -46,7 +46,7 @@ function Login() {
               <a className="underline mr-45 font-light text-sm cursor-pointer">
                 ForgotPassword
               </a>
-              <button type='button' className="w-80 bg-blue-400 mt-2 py-2 rounded-lg text-white shadow-md cursor-pointer" onClick={()=>navigate('studentdashboard')}
+              <button type='button' className="w-80 bg-blue-400 mt-2 py-2 rounded-lg text-white shadow-md cursor-pointer" onClick={()=>navigate('/studentdashboard')}
               >
                 Login
               </button>
