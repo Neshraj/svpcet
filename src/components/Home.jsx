@@ -1,25 +1,33 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 <Helmet>
+  <meta
+    name="google-site-verification"
+    content="iWi7L29i1Uh-ufBFI3vafScreh3SXOi5QUOBWI-NXc4"
+  />
   <title>SVPCET College Management System</title>
-  <meta name="description" content="Manage academics, attendance, and student-teacher communication with SVPCET SRI VENKATESA PERUMAL COLLEGE OF ENGINEERING AND TECHNOLOGY CMS." />
-  <meta name="keywords" content="college management system, student portal, SVPCET, attendance, dashboard, education" />
+  <meta
+    name="description"
+    content="Manage academics, attendance, and student-teacher communication with SVPCET SRI VENKATESA PERUMAL COLLEGE OF ENGINEERING AND TECHNOLOGY CMS."
+  />
+  <meta
+    name="keywords"
+    content="college management system, student portal, SVPCET, attendance, dashboard, education"
+  />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://svpcet.onrender.com" />
-  <meta name="google-site-verification" content="iWi7L29i1Uh-ufBFI3vafScreh3SXOi5QUOBWI-NXc4" />
-</Helmet>
-
+</Helmet>;
 
 function Home() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div className="container mx-auto font-mono box-border shadow-sm bg-gray-50 text-gray-800 min-h-screen">
       {/* Header Logo */}
       <div className="container mx-auto shadow-sm flex flex-row justify-center py-2">
-          <img className="" src="/assets/tag.png" alt="Tag" />
-        </div>
+        <img className="" src="/assets/tag.png" alt="Tag" />
+      </div>
 
       {/* Hero Section */}
       <section className="bg-blue-400 text-white py-16 px-4">
@@ -32,7 +40,10 @@ function Home() {
             for Seamless Daily Operations.
           </p>
           <div className="mt-8">
-            <button className="bg-white text-blue-600 cursor-pointer font-semibold px-6 py-3 rounded-lg hover:bg-blue-100 transition" onClick={()=>navigate('/login')}>
+            <button
+              className="bg-white text-blue-600 cursor-pointer font-semibold px-6 py-3 rounded-lg hover:bg-blue-100 transition"
+              onClick={() => navigate("/login")}
+            >
               Proceed to Login
             </button>
           </div>
@@ -117,12 +128,18 @@ function Home() {
             <h4 className="text-xl font-bold mb-3">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a className="hover:underline hover:cursor-pointer" onClick={()=>navigate('/login')}>
+                <a
+                  className="hover:underline hover:cursor-pointer"
+                  onClick={() => navigate("/login")}
+                >
                   Login
                 </a>
               </li>
               <li>
-                <a href="https://svpcet.org" className="hover:underline hover:cursor-pointer">
+                <a
+                  href="https://svpcet.org"
+                  className="hover:underline hover:cursor-pointer"
+                >
                   About Us
                 </a>
               </li>
